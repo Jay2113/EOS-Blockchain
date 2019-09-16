@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Block: JSONContainer {
+struct Block: JSONContainer, Codable {
     let timestamp: String
     let producer: String
     let confirmed: Int

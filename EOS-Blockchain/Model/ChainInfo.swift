@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ChainInfo: JSONContainer {
+struct ChainInfo: JSONContainer, Codable {
     let serverVersion: String
     let chainId: String
     let headBlockNum: Int
