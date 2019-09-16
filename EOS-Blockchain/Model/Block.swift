@@ -19,6 +19,7 @@ struct Block {
     let newProducers: String?
     let headerExtensions: [String]
     let producerSignature: String
+    let transactions: [Transaction]
     
     enum CodingKeys: String, CodingKey {
         case timestamp = "timestamp"
@@ -31,5 +32,6 @@ struct Block {
         case newProducers = "new_producers"
         case headerExtensions = "header_extensions"
         case producer_signature = "producer_signature"
+        case transactions = "transactions"
     }
 }
