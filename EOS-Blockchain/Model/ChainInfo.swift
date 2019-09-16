@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ChainInfo {
+struct ChainInfo: JSONContainer {
     let serverVersion: String
     let chainId: String
     let headBlockNum: Int
@@ -22,6 +22,8 @@ struct ChainInfo {
     let blockCPULimit: Int
     let blockNETLimit: Int
     let serverVersionString: String
+    var object = [String : Any]()
+    
     
     enum CodingKeys: String, CodingKey {
         case serverVersion = "server_version"

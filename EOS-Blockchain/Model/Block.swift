@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Block {
+struct Block: JSONContainer {
     let timestamp: String
     let producer: String
     let confirmed: Int
@@ -20,6 +20,8 @@ struct Block {
     let headerExtensions: [String]
     let producerSignature: String
     let transactions: [Transaction]
+    var object = [String: Any]()
+    
     
     enum CodingKeys: String, CodingKey {
         case timestamp = "timestamp"
