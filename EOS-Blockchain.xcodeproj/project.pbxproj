@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		696150D923301A440063155E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150D823301A440063155E /* Transaction.swift */; };
+		696150DB23301C050063155E /* ChainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DA23301C050063155E /* ChainInfo.swift */; };
 		69D1405723301248004AD3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405623301248004AD3E4 /* AppDelegate.swift */; };
 		69D1405923301248004AD3E4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405823301248004AD3E4 /* MasterViewController.swift */; };
 		69D1405B23301248004AD3E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405A23301248004AD3E4 /* DetailViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		696150D823301A440063155E /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		696150DA23301C050063155E /* ChainInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainInfo.swift; sourceTree = "<group>"; };
 		69D1405323301248004AD3E4 /* EOS-Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EOS-Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D1405623301248004AD3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69D1405823301248004AD3E4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				69D1406B233012AE004AD3E4 /* Block.swift */,
 				696150D823301A440063155E /* Transaction.swift */,
+				696150DA23301C050063155E /* ChainInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				69D1405B23301248004AD3E4 /* DetailViewController.swift in Sources */,
 				69D1406C233012AE004AD3E4 /* Block.swift in Sources */,
 				69D1405923301248004AD3E4 /* MasterViewController.swift in Sources */,
+				696150DB23301C050063155E /* ChainInfo.swift in Sources */,
 				69D1405723301248004AD3E4 /* AppDelegate.swift in Sources */,
 				696150D923301A440063155E /* Transaction.swift in Sources */,
 			);
