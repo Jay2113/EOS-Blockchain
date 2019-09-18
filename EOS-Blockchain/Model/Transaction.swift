@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Transaction {
+struct Transaction: Codable {
     let status: String
     let cpuUsageUS: Int
     let netUsageWords: Int

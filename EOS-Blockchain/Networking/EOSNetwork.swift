@@ -12,7 +12,7 @@ import UIKit
 class EOSNetwork {
     let endPointURL = URL(string: "https://api.eosnewyork.io/v1/")
     
-    let shared = EOSNetwork()
+    static let shared = EOSNetwork()
     
     init() {
         
@@ -43,6 +43,7 @@ class EOSNetwork {
             guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
                 print("Server error")
                 callback(nil, .serverError)
+                return
             }
             
             if let data = data {

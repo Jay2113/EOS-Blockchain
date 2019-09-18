@@ -12,7 +12,7 @@
 		696150DE233022920063155E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DD233022920063155E /* Protocols.swift */; };
 		696150E3233024210063155E /* EOSNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150E2233024210063155E /* EOSNetwork.swift */; };
 		69D1405723301248004AD3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405623301248004AD3E4 /* AppDelegate.swift */; };
-		69D1405923301248004AD3E4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405823301248004AD3E4 /* MasterViewController.swift */; };
+		69D1405923301248004AD3E4 /* BlocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405823301248004AD3E4 /* BlocksViewController.swift */; };
 		69D1405B23301248004AD3E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405A23301248004AD3E4 /* DetailViewController.swift */; };
 		69D1405E23301248004AD3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D1405C23301248004AD3E4 /* Main.storyboard */; };
 		69D1406023301248004AD3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D1405F23301248004AD3E4 /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 		696150E2233024210063155E /* EOSNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSNetwork.swift; sourceTree = "<group>"; };
 		69D1405323301248004AD3E4 /* EOS-Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EOS-Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D1405623301248004AD3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69D1405823301248004AD3E4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		69D1405823301248004AD3E4 /* BlocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksViewController.swift; sourceTree = "<group>"; };
 		69D1405A23301248004AD3E4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		69D1405D23301248004AD3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69D1405F23301248004AD3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +63,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		696150E42331510F0063155E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69D1405823301248004AD3E4 /* BlocksViewController.swift */,
+				69D1405A23301248004AD3E4 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		69D1404A23301248004AD3E4 = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +91,11 @@
 		69D1405523301248004AD3E4 /* EOS-Blockchain */ = {
 			isa = PBXGroup;
 			children = (
+				696150E42331510F0063155E /* Controller */,
 				696150DF233023B10063155E /* Networking */,
 				696150DC233022790063155E /* Protocol */,
 				69D1406A23301283004AD3E4 /* Model */,
 				69D1405623301248004AD3E4 /* AppDelegate.swift */,
-				69D1405823301248004AD3E4 /* MasterViewController.swift */,
-				69D1405A23301248004AD3E4 /* DetailViewController.swift */,
 				69D1405C23301248004AD3E4 /* Main.storyboard */,
 				69D1405F23301248004AD3E4 /* Assets.xcassets */,
 				69D1406123301248004AD3E4 /* LaunchScreen.storyboard */,
@@ -180,7 +188,7 @@
 				69D1405B23301248004AD3E4 /* DetailViewController.swift in Sources */,
 				69D1406C233012AE004AD3E4 /* Block.swift in Sources */,
 				696150DE233022920063155E /* Protocols.swift in Sources */,
-				69D1405923301248004AD3E4 /* MasterViewController.swift in Sources */,
+				69D1405923301248004AD3E4 /* BlocksViewController.swift in Sources */,
 				696150E3233024210063155E /* EOSNetwork.swift in Sources */,
 				696150DB23301C050063155E /* ChainInfo.swift in Sources */,
 				69D1405723301248004AD3E4 /* AppDelegate.swift in Sources */,
