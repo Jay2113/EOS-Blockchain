@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691D914F2332120500A52DC0 /* EOS_BlockchainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691D914E2332120500A52DC0 /* EOS_BlockchainTests.swift */; };
 		696150D923301A440063155E /* EOSTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150D823301A440063155E /* EOSTransaction.swift */; };
 		696150DB23301C050063155E /* EOSChainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DA23301C050063155E /* EOSChainInfo.swift */; };
 		696150DE233022920063155E /* EOSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DD233022920063155E /* EOSProtocol.swift */; };
@@ -20,7 +21,20 @@
 		69D1406C233012AE004AD3E4 /* EOSBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1406B233012AE004AD3E4 /* EOSBlock.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		691D91512332120500A52DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69D1404B23301248004AD3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D1405223301248004AD3E4;
+			remoteInfo = "EOS-Blockchain";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		691D914C2332120500A52DC0 /* EOS-BlockchainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EOS-BlockchainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		691D914E2332120500A52DC0 /* EOS_BlockchainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOS_BlockchainTests.swift; sourceTree = "<group>"; };
+		691D91502332120500A52DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696150D823301A440063155E /* EOSTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSTransaction.swift; sourceTree = "<group>"; };
 		696150DA23301C050063155E /* EOSChainInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSChainInfo.swift; sourceTree = "<group>"; };
 		696150DD233022920063155E /* EOSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSProtocol.swift; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		691D91492332120500A52DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69D1405023301248004AD3E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,6 +75,15 @@
 				69D1406123301248004AD3E4 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		691D914D2332120500A52DC0 /* EOS-BlockchainTests */ = {
+			isa = PBXGroup;
+			children = (
+				691D914E2332120500A52DC0 /* EOS_BlockchainTests.swift */,
+				691D91502332120500A52DC0 /* Info.plist */,
+			);
+			path = "EOS-BlockchainTests";
 			sourceTree = "<group>";
 		};
 		696150DC233022790063155E /* Protocol */ = {
@@ -85,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				69D1405523301248004AD3E4 /* EOS-Blockchain */,
+				691D914D2332120500A52DC0 /* EOS-BlockchainTests */,
 				69D1405423301248004AD3E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				69D1405323301248004AD3E4 /* EOS-Blockchain.app */,
+				691D914C2332120500A52DC0 /* EOS-BlockchainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +157,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		691D914B2332120500A52DC0 /* EOS-BlockchainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 691D91532332120600A52DC0 /* Build configuration list for PBXNativeTarget "EOS-BlockchainTests" */;
+			buildPhases = (
+				691D91482332120500A52DC0 /* Sources */,
+				691D91492332120500A52DC0 /* Frameworks */,
+				691D914A2332120500A52DC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				691D91522332120500A52DC0 /* PBXTargetDependency */,
+			);
+			name = "EOS-BlockchainTests";
+			productName = "EOS-BlockchainTests";
+			productReference = 691D914C2332120500A52DC0 /* EOS-BlockchainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		69D1405223301248004AD3E4 /* EOS-Blockchain */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69D1406723301248004AD3E4 /* Build configuration list for PBXNativeTarget "EOS-Blockchain" */;
@@ -152,6 +202,10 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Jay Raval";
 				TargetAttributes = {
+					691D914B2332120500A52DC0 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 69D1405223301248004AD3E4;
+					};
 					69D1405223301248004AD3E4 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -171,11 +225,19 @@
 			projectRoot = "";
 			targets = (
 				69D1405223301248004AD3E4 /* EOS-Blockchain */,
+				691D914B2332120500A52DC0 /* EOS-BlockchainTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		691D914A2332120500A52DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69D1405123301248004AD3E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +251,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		691D91482332120500A52DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				691D914F2332120500A52DC0 /* EOS_BlockchainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69D1404F23301248004AD3E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,6 +275,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		691D91522332120500A52DC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69D1405223301248004AD3E4 /* EOS-Blockchain */;
+			targetProxy = 691D91512332120500A52DC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		69D1405C23301248004AD3E4 /* Main.storyboard */ = {
@@ -226,6 +304,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		691D91542332120600A52DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S65G778W79;
+				INFOPLIST_FILE = "EOS-BlockchainTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JRTech.EOS-BlockchainTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOS-Blockchain.app/EOS-Blockchain";
+			};
+			name = Debug;
+		};
+		691D91552332120600A52DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S65G778W79;
+				INFOPLIST_FILE = "EOS-BlockchainTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JRTech.EOS-BlockchainTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOS-Blockchain.app/EOS-Blockchain";
+			};
+			name = Release;
+		};
 		69D1406523301248004AD3E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -381,6 +499,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		691D91532332120600A52DC0 /* Build configuration list for PBXNativeTarget "EOS-BlockchainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691D91542332120600A52DC0 /* Debug */,
+				691D91552332120600A52DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		69D1404E23301248004AD3E4 /* Build configuration list for PBXProject "EOS-Blockchain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
