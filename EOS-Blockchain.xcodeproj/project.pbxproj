@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		691D914F2332120500A52DC0 /* EOS_BlockchainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691D914E2332120500A52DC0 /* EOS_BlockchainTests.swift */; };
+		695B92462332187500619E05 /* BlockDetailVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B92452332187500619E05 /* BlockDetailVCTests.swift */; };
 		696150D923301A440063155E /* EOSTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150D823301A440063155E /* EOSTransaction.swift */; };
 		696150DB23301C050063155E /* EOSChainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DA23301C050063155E /* EOSChainInfo.swift */; };
 		696150DE233022920063155E /* EOSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DD233022920063155E /* EOSProtocol.swift */; };
@@ -35,6 +36,7 @@
 		691D914C2332120500A52DC0 /* EOS-BlockchainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EOS-BlockchainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		691D914E2332120500A52DC0 /* EOS_BlockchainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOS_BlockchainTests.swift; sourceTree = "<group>"; };
 		691D91502332120500A52DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		695B92452332187500619E05 /* BlockDetailVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDetailVCTests.swift; sourceTree = "<group>"; };
 		696150D823301A440063155E /* EOSTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSTransaction.swift; sourceTree = "<group>"; };
 		696150DA23301C050063155E /* EOSChainInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSChainInfo.swift; sourceTree = "<group>"; };
 		696150DD233022920063155E /* EOSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSProtocol.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				691D914E2332120500A52DC0 /* EOS_BlockchainTests.swift */,
 				691D91502332120500A52DC0 /* Info.plist */,
+				695B92452332187500619E05 /* BlockDetailVCTests.swift */,
 			);
 			path = "EOS-BlockchainTests";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				691D914F2332120500A52DC0 /* EOS_BlockchainTests.swift in Sources */,
+				695B92462332187500619E05 /* BlockDetailVCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
