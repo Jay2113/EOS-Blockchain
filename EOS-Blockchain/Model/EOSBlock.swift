@@ -1,5 +1,5 @@
 //
-//  Block.swift
+//  EOSBlock.swift
 //  EOS-Blockchain
 //
 //  Created by Jay Raval on 9/16/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Block: JSONContainer, Codable {
+struct EOSBlock: JSONContainer, Codable {
     let timestamp: String
     let producer: String
     let confirmed: Int
@@ -19,7 +19,7 @@ struct Block: JSONContainer, Codable {
     let newProducers: String?
     let headerExtensions: [String]
     let producerSignature: String
-    let transactions: [Transaction]
+    let transactions: [EOSTransaction]
     var object = [String: Any]()
     
     

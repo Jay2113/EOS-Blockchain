@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		696150D923301A440063155E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150D823301A440063155E /* Transaction.swift */; };
-		696150DB23301C050063155E /* ChainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DA23301C050063155E /* ChainInfo.swift */; };
-		696150DE233022920063155E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DD233022920063155E /* Protocols.swift */; };
+		696150D923301A440063155E /* EOSTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150D823301A440063155E /* EOSTransaction.swift */; };
+		696150DB23301C050063155E /* EOSChainInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DA23301C050063155E /* EOSChainInfo.swift */; };
+		696150DE233022920063155E /* EOSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150DD233022920063155E /* EOSProtocol.swift */; };
 		696150E3233024210063155E /* EOSNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696150E2233024210063155E /* EOSNetwork.swift */; };
 		69D1405723301248004AD3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405623301248004AD3E4 /* AppDelegate.swift */; };
-		69D1405923301248004AD3E4 /* BlocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405823301248004AD3E4 /* BlocksViewController.swift */; };
-		69D1405B23301248004AD3E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405A23301248004AD3E4 /* DetailViewController.swift */; };
+		69D1405923301248004AD3E4 /* RecentBlocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405823301248004AD3E4 /* RecentBlocksViewController.swift */; };
+		69D1405B23301248004AD3E4 /* BlockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1405A23301248004AD3E4 /* BlockDetailViewController.swift */; };
 		69D1405E23301248004AD3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D1405C23301248004AD3E4 /* Main.storyboard */; };
 		69D1406023301248004AD3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D1405F23301248004AD3E4 /* Assets.xcassets */; };
 		69D1406323301248004AD3E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D1406123301248004AD3E4 /* LaunchScreen.storyboard */; };
-		69D1406C233012AE004AD3E4 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1406B233012AE004AD3E4 /* Block.swift */; };
+		69D1406C233012AE004AD3E4 /* EOSBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D1406B233012AE004AD3E4 /* EOSBlock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		696150D823301A440063155E /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
-		696150DA23301C050063155E /* ChainInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainInfo.swift; sourceTree = "<group>"; };
-		696150DD233022920063155E /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		696150D823301A440063155E /* EOSTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSTransaction.swift; sourceTree = "<group>"; };
+		696150DA23301C050063155E /* EOSChainInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSChainInfo.swift; sourceTree = "<group>"; };
+		696150DD233022920063155E /* EOSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSProtocol.swift; sourceTree = "<group>"; };
 		696150E2233024210063155E /* EOSNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSNetwork.swift; sourceTree = "<group>"; };
 		69D1405323301248004AD3E4 /* EOS-Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EOS-Blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D1405623301248004AD3E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69D1405823301248004AD3E4 /* BlocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksViewController.swift; sourceTree = "<group>"; };
-		69D1405A23301248004AD3E4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		69D1405823301248004AD3E4 /* RecentBlocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentBlocksViewController.swift; sourceTree = "<group>"; };
+		69D1405A23301248004AD3E4 /* BlockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDetailViewController.swift; sourceTree = "<group>"; };
 		69D1405D23301248004AD3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69D1405F23301248004AD3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D1406223301248004AD3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69D1406423301248004AD3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69D1406B233012AE004AD3E4 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		69D1406B233012AE004AD3E4 /* EOSBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSBlock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +47,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		691D91242331F2CF00A52DC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69D1405C23301248004AD3E4 /* Main.storyboard */,
+				69D1406123301248004AD3E4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		696150DC233022790063155E /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				696150DD233022920063155E /* Protocols.swift */,
+				696150DD233022920063155E /* EOSProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -66,8 +75,8 @@
 		696150E42331510F0063155E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				69D1405823301248004AD3E4 /* BlocksViewController.swift */,
-				69D1405A23301248004AD3E4 /* DetailViewController.swift */,
+				69D1405823301248004AD3E4 /* RecentBlocksViewController.swift */,
+				69D1405A23301248004AD3E4 /* BlockDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,14 +100,13 @@
 		69D1405523301248004AD3E4 /* EOS-Blockchain */ = {
 			isa = PBXGroup;
 			children = (
+				69D1406A23301283004AD3E4 /* Model */,
+				691D91242331F2CF00A52DC0 /* View */,
 				696150E42331510F0063155E /* Controller */,
 				696150DF233023B10063155E /* Networking */,
 				696150DC233022790063155E /* Protocol */,
-				69D1406A23301283004AD3E4 /* Model */,
 				69D1405623301248004AD3E4 /* AppDelegate.swift */,
-				69D1405C23301248004AD3E4 /* Main.storyboard */,
 				69D1405F23301248004AD3E4 /* Assets.xcassets */,
-				69D1406123301248004AD3E4 /* LaunchScreen.storyboard */,
 				69D1406423301248004AD3E4 /* Info.plist */,
 			);
 			path = "EOS-Blockchain";
@@ -107,9 +115,9 @@
 		69D1406A23301283004AD3E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				69D1406B233012AE004AD3E4 /* Block.swift */,
-				696150D823301A440063155E /* Transaction.swift */,
-				696150DA23301C050063155E /* ChainInfo.swift */,
+				69D1406B233012AE004AD3E4 /* EOSBlock.swift */,
+				696150D823301A440063155E /* EOSTransaction.swift */,
+				696150DA23301C050063155E /* EOSChainInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,14 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D1405B23301248004AD3E4 /* DetailViewController.swift in Sources */,
-				69D1406C233012AE004AD3E4 /* Block.swift in Sources */,
-				696150DE233022920063155E /* Protocols.swift in Sources */,
-				69D1405923301248004AD3E4 /* BlocksViewController.swift in Sources */,
+				69D1405B23301248004AD3E4 /* BlockDetailViewController.swift in Sources */,
+				69D1406C233012AE004AD3E4 /* EOSBlock.swift in Sources */,
+				696150DE233022920063155E /* EOSProtocol.swift in Sources */,
+				69D1405923301248004AD3E4 /* RecentBlocksViewController.swift in Sources */,
 				696150E3233024210063155E /* EOSNetwork.swift in Sources */,
-				696150DB23301C050063155E /* ChainInfo.swift in Sources */,
+				696150DB23301C050063155E /* EOSChainInfo.swift in Sources */,
 				69D1405723301248004AD3E4 /* AppDelegate.swift in Sources */,
-				696150D923301A440063155E /* Transaction.swift in Sources */,
+				696150D923301A440063155E /* EOSTransaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

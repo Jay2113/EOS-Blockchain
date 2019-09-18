@@ -1,5 +1,5 @@
 //
-//  ChainInfo.swift
+//  EOSChainInfo.swift
 //  EOS-Blockchain
 //
 //  Created by Jay Raval on 9/16/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ChainInfo: JSONContainer, Codable {
+struct EOSChainInfo: JSONContainer, Codable {
     let serverVersion: String
     let chainId: String
     let headBlockNum: Int

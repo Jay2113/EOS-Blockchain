@@ -1,5 +1,5 @@
 //
-//  Transaction.swift
+//  EOSTransaction.swift
 //  EOS-Blockchain
 //
 //  Created by Jay Raval on 9/16/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Transaction: Codable {
+struct EOSTransaction: Codable {
     let status: String
     let cpuUsageUS: Int
     let netUsageWords: Int

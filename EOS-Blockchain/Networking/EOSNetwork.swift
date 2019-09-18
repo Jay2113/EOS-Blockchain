@@ -10,13 +10,18 @@ import Foundation
 import UIKit
 
 class EOSNetwork {
-    let endPointURL = URL(string: "https://api.eosnewyork.io/v1/")
     
+    // Properties
+    private let endPointURL = URL(string: "https://api.eosnewyork.io/v1/")
+    
+    // Singleton
     static let shared = EOSNetwork()
     
-    init() {
+    private init() {
         
     }
+    
+    // MARK: - Send request, Fetch resource, Parse JSON, Handle errors
     
     func getResource<T:Codable>(rpc: String, body:[String: Any]?, callback: @escaping (T?, NetworkErrors?) -> Void) where T:JSONContainer {
         
@@ -62,15 +67,17 @@ class EOSNetwork {
         task.resume()
     }
     
-    func getChainInfo(_ callback: @escaping (ChainInfo?, NetworkErrors?) -> Void) {
+    // MARK: - RPC Endpoints
+    
+    func getChainInfo(_ callback: @escaping (EOSChainInfo?, NetworkErrors?) -> Void) {
         getResource(rpc: "chain/get_info", body: nil, callback: callback)
     }
     
-    func getBlock(blockId: String, callback: @escaping (Block?, NetworkErrors?) -> Void) {
+    func getBlock(blockId: String, callback: @escaping (EOSBlock?, NetworkErrors?) -> Void) {
         getResource(rpc: "chain/get_block", body: ["block_num_or_id" : blockId], callback: callback)
     }
     
-    func getBlock(blockNum: Int, callback: @escaping (Block?, NetworkErrors?) -> Void) {
+    func getBlock(blockNum: Int, callback: @escaping (EOSBlock?, NetworkErrors?) -> Void) {
         getResource(rpc: "chain/get_block", body: ["block_num_or_id" : blockNum], callback: callback)
     }
 }

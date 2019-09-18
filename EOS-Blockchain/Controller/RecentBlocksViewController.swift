@@ -1,5 +1,5 @@
 //
-//  MasterViewController.swift
+//  RecentBlockViewController.swift
 //  EOS-Blockchain
 //
 //  Created by Jay Raval on 9/16/19.
@@ -8,12 +8,18 @@
 
 import UIKit
 
-class BlocksViewController: UITableViewController {
-
-    var detailViewController: DetailViewController? = nil
+class RecentBlocksViewController: UITableViewController {
+    
+    // Properties
+    var detailViewController: BlockDetailViewController? = nil
     var headBlockNumber: Int!
     var rowCount = 0
-    var refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh(_:)))
+    
+    // Refresh Button
+    lazy var refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshBlocks(_:)))
+    
+    
+    // MARK: - View Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,19 +28,21 @@ class BlocksViewController: UITableViewController {
         if let split = splitViewController {
             split.preferredDisplayMode = .allVisible
             let controllers = split.viewControllers
-            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+            detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? BlockDetailViewController
         }
         
-        refresh(self)
+        refreshBlocks(self)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
     }
+    
+    // MARK: - Refresh and fetch the 20 most recent blocks of the EOS Blockchain
 
     @objc
-    func refresh(_ sender: Any) {
+    func refreshBlocks(_ sender: Any) {
         let activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.startAnimating()
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: activityIndicator)
@@ -55,11 +63,13 @@ class BlocksViewController: UITableViewController {
                 self.displayError(error: error)
             }
             
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.3, execute: {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1, execute: {
                 self.navigationItem.rightBarButtonItem = self.refresh
             })
         }
     }
+    
+    // MARK: - Update the User Interface
     
     func updateUI() {
         if self.rowCount == 0 {
@@ -71,6 +81,8 @@ class BlocksViewController: UITableViewController {
             self.tableView.endUpdates()
         }
     }
+    
+    // MARK: - Handle errors
     
     func displayError(error: NetworkErrors) {
         var description = ""
@@ -98,7 +110,7 @@ class BlocksViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let blockNumber = headBlockNumber - indexPath.row
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                let controller = (segue.destination as! UINavigationController).topViewController as! BlockDetailViewController
                 controller.blockNum = blockNumber
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -123,13 +135,13 @@ class BlocksViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Block Number"
+    }
+    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Block Number"
-    }
-
 }
 

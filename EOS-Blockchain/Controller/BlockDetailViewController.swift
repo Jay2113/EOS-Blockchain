@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  BlockDetailViewController.swift
 //  EOS-Blockchain
 //
 //  Created by Jay Raval on 9/16/19.
@@ -8,8 +8,9 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class BlockDetailViewController: UIViewController {
     
+    // Outlets
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var timestamp: UILabel!
     @IBOutlet weak var blockNumber: UILabel!
@@ -20,7 +21,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var toggleData: UISwitch!
     @IBOutlet weak var rawText: UITextView!
     
-    var block: Block?
+    // Properties
+    var block: EOSBlock?
+    
+    // MARK: - View Lifecycle
     
     func configureView() {
         // Update the user interface for the detail item.
@@ -45,13 +49,15 @@ class DetailViewController: UIViewController {
         configureView()
     }
     
+    // MARK: - Fetch details of the selected block
+    
     var blockNum: Int? {
         didSet {
-            downloadBlockDetail()
+            fetchBlockDetail()
         }
     }
     
-    func downloadBlockDetail() {
+    func fetchBlockDetail() {
         guard let blockNum = blockNum else {
             return
         }
@@ -72,7 +78,7 @@ class DetailViewController: UIViewController {
                     errorDescription = "Can not parse server response. Please try again."
                 }
                 DispatchQueue.main.async {
-                    self?.showError(description: errorDescription)
+                    self?.displayError(description: errorDescription)
                 }
             }
             
@@ -85,12 +91,14 @@ class DetailViewController: UIViewController {
         }
     }
     
-    func showError(description: String) {
+    // MARK: - Handle errors
+    
+    func displayError(description: String) {
         activityIndicator.stopAnimating()
         let alert = UIAlertController(title: "Error", message: description, preferredStyle: .alert)
         let actionRetry = UIAlertAction(title: "Retry", style: .default) { (action) in
             self.dismiss(animated: true, completion: nil)
-            self.downloadBlockDetail()
+            self.fetchBlockDetail()
         }
         let actionCancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
             self.dismiss(animated: false, completion: nil)
@@ -100,6 +108,8 @@ class DetailViewController: UIViewController {
         alert.addAction(actionCancel)
         present(alert, animated: true, completion: nil)
     }
+    
+    // MARK: - Toggle RAW JSON
     
     @IBAction func toggleJSON(_ sender: Any) {
         if rawText.isHidden {

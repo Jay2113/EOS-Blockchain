@@ -1,5 +1,5 @@
 //
-//  Protocols.swift
+//  EOSProtocol.swift
 //  EOS-Blockchain
 //
 //  Created by Jay Raval on 9/16/19.
