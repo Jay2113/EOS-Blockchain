@@ -11,3 +11,7 @@ An iOS application displaying most recent blocks on the EOS Cryptocurrency Block
 - Selecting a particular block from the UITableView shows more information related to that block.
 - Additionally raw JSON data can be viewed on the Block Detail screen.
 
+## Screenshots
+![Simulator Screen Shot - iPhone Xʀ - 2019-09-18 at 04 28 31_iphonexspacegrey_portrait](https://user-images.githubusercontent.com/38470430/65131570-7078d180-d9cd-11e9-9bd3-807c65d34714.png)
+![Simulator Screen Shot - iPhone Xʀ - 2019-09-18 at 04 29 15_iphonexspacegrey_portrait](https://user-images.githubusercontent.com/38470430/65131569-7078d180-d9cd-11e9-98a1-ae16513b04d5.png)
+![Simulator Screen Shot - iPhone Xʀ - 2019-09-18 at 04 29 22_iphonexspacegrey_portrait](https://user-images.githubusercontent.com/38470430/65131568-6fe03b00-d9cd-11e9-957d-86839a6a567f.png)
